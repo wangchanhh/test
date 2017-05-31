@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin:0;
+}
+/*#img{*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*z-index: -1;*/
+/*}*/
+.gameLis{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+.gameLis h1{
+    margin-left: 147px;
+}
+.gameLis a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    /*去掉按钮自带的边框样式*/
+    /*border-style: none;*/
+    /*outline是指input输入框或者button按钮获得焦点时自带对对对边框样式*/
+    /*outline: none;*/
+    border: 2px solid #7ED14B;
+    border-radius:8px;
+    /*谷歌浏览器不兼容渐变色，要加-webkit*/
+    background-image: -webkit-linear-gradient(top,#E7F3DD,#82CA42);
+    /*边框内部阴影方法一：第三个参数代表模糊的半径，第四个参数代表阴影半径*/
+    box-shadow: 0px 0px 0px 2px #fff inset;
+    /*边框内部阴影方法一:注意此处通过设置盒子阴影实现白色内边框效果，注意值的正负及inset等对应的效果*/
+    /*box-shadow: 0px 3px 3px #fff inset,0px -3px 3px #fff inset,3px 0px 3px #fff inset,-3px 0px 3px #fff inset;*/
+}
+.gameLis a:first-of-type{
+    margin-top: 100px;
+}
+.gameLis a:last-of-type{
+    margin-top: 50px;
+}
+#infoPanel{
+    background-color: #fff;
+    width: 510px;
+    height: 580px;
+    position: absolute;
+    /*top: 30px;*/
+    /*left: 500px;*/
+    /*想让元素定位在腹肌容器的居中位置的方法： position: absolute;top: 50%;left: 50%;
+    （使得元素的左上角处于父元素的中心位置，然后再将元素的中心位置平移到左上角所处的位置）
+     margin-left: -255px;（将元素左移元素的宽的一半，实现水平居中定位）
+    margin-top: -260px;（上边距可根据需要来调整）*/
+    top: 50%;
+    left: 50%;
+    margin-left: -255px;
+    margin-top: -260px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    display: none;
+
+}
+#infoPanel .info{
+    width: 470px;
+    margin: 20px auto;
+    line-height: 20px;
+}
+#infoPanel .close{
+    text-decoration: none;
+    color: #000715;
+    position: absolute;
+    left: 180px;
+    bottom: 20px;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    border: 2px solid #5B8999;
+    border-radius:8px;
+    background-image: -webkit-linear-gradient(top,#E6FFFF,#69B2D4);
+    /*注意此处通过设置盒子阴影实现白色内边框效果，注意值的正负及inset等对应的效果*/
+    box-shadow: 0px 3px 3px #fff inset,0px -3px 3px #fff inset,3px 0px 3px #fff inset,-3px 0px 3px #fff inset;
+    text-align: center;
+}
